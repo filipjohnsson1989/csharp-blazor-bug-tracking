@@ -8,18 +8,16 @@
             <th>Priority</th>
         </tr>
     </thead>
-    <tbody>
 
-        @foreach (Bug bug in Bugs)
-        {
-            <tr>
-                <td>@bug.Id</td>
-                <td>@bug.Title</td>
-                <td>@bug.Description</td>
-                <td>@bug.Priority</td>
-            </tr>
-        }
-    </tbody>
+    @foreach (Bug bug in Bugs)
+    {
+        <tr>
+            <td>@bug.Id</td>
+            <td>@bug.Title</td>
+            <td>@bug.Description</td>
+            <td>@bug.Priority</td>
+        </tr>
+    }
 </table>
 
 @code {
